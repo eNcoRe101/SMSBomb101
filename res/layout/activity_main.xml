@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:text="Send" />
+
+    <EditText
+        android:id="@+id/phoneNum"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="34dp"
+        android:ems="10"
+        android:inputType="number|phone"
+        android:hint="@string/Phone_Number" />
+
+    <EditText
+        android:id="@+id/numSMS"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="54dp"
+        android:ems="10"
+        android:hint="@string/sms_Num"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/messageSMS"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/sendButton"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/numSMS"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/sms_message"
+        android:inputType="textMultiLine" />
+
+</RelativeLayout>
